@@ -1,0 +1,15 @@
+ADMINISTRATOR_SETTING:
+  mask_th: 50
+  update_frame: 30
+  median_ksize: 5
+  det_th: 30
+  log_folder: "log"
+  bg_folder: "bg"
+  meteor_pxl_log: "meteor_pxl.csv"
+
+USER_SETTING:  
+  input_video_folder: "C:/Users/yfukui/Desktop/videos"
+  output_video_folder: "D:/git/python_sample/meteor_detector_tool/output_videos"
+  video_extension: ".mp4"
+  img_range_x: [0, 960]
+  img_range_y: [0, 350]

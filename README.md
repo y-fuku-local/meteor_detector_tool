@@ -1,0 +1,7 @@
+- ŠÂ‹«
+ - Python 3.7.11
+ - pip install opencv-python
+ - pip install yacs
+ - pip install pyinstaller
+- exe‰»
+ - pyinstaller main.py --onefile
