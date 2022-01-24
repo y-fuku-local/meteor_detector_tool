@@ -68,7 +68,7 @@ class MeteorDetector:
                                      '_' + str(frame_counter).zfill(6) + self.cfg.USER_SETTING.video_extension
 
                     video = cv2.VideoWriter(out_video_name, self.fourcc, self.fps, (self.w, self.h))
-                    video.write(gray_image)
+                    video.write(frame)
                     video_frame_counter = 1
                     pxl_list = list([max(bbox[1:bbox.shape[0],4])])
                     while(1):
@@ -81,7 +81,7 @@ class MeteorDetector:
                         if labels <= 1 or max(bbox[1:bbox.shape[0],4]) < self.cfg.ADMINISTRATOR_SETTING.det_th:
                             break
                         else:
-                            video.write(gray_image)
+                            video.write(frame)
                             video_frame_counter += 1
                             pxl_list.append(max(bbox[1:bbox.shape[0],4]))
 
